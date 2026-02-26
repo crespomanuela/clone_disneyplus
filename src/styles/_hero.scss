@@ -1,0 +1,83 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url('../images/hero_desktop.jpeg');
+
+    &__content {
+        max-width: 640px;
+        text-align: center;
+
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+
+        .tittle--small {
+            margin-bottom: 64px;
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            .link-text {
+                display: inline-block;
+                margin-bottom: 24px;
+            }
+
+            span {
+                margin-bottom: 32px;
+            }
+        }
+
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+
+            &__combo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-bottom: 16px;
+                }
+
+                button {
+                    display: flex !important;
+                    align-items: center !important;
+                    align-content: center !important;
+                    text-align: center !important;
+                    padding: 0;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 18px;
+                    color: variaveis.$sdText;
+                    background-color: #6421ff;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 12px;
+                    margin-top: 2vw;
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: lighten(#6421ff, 10%);
+                    }
+                }
+
+                .text {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

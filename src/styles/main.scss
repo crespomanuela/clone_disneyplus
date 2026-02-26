@@ -1,5 +1,53 @@
-$bgColor: #f9f9f9;
+@use 'variaveis';
+@use 'hero';
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$bgColor;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize (+10px);
+    color: variaveis.$prText;
+}
+
+@mixin tittle($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$sdText;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--smail {
+    @include text(12px);
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$sdText;
+    text-decoration: underline;
+}
+
+.tittle--big {
+    @include tittle(44px);
+}
+
+.tittle {
+    @include tittle;
+}
+
+.tittle--small {
+    @include tittle(28px);
 }
