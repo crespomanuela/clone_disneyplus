@@ -5,8 +5,8 @@
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url('../images/hero_desktop.jpeg');
-    text-align: center;
     background-size: cover;
+    background-position: center;
 
     &__content {
         max-width: 640px;
@@ -72,7 +72,7 @@
                     height: 60px;
                     font-size: 18px;
                     color: variaveis.$sdText;
-                    background-color: #6421ff;
+                    background-color: #00b4d8;
                     text-transform: uppercase;
                     border: none;
                     border-radius: 12px;
@@ -82,7 +82,7 @@
                     transition: background-color 0.3s;
 
                     &:hover {
-                        background-color: color.adjust(#6421ff, $lightness: 10%);
+                        background-color: color.adjust(#040714, $lightness: 10%);
                     }
                 }
 
