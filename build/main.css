@@ -1,0 +1,137 @@
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url("../images/hero_desktop.jpeg");
+  text-align: center;
+  background-size: cover;
+}
+.hero__content {
+  max-width: 640px;
+  text-align: center;
+}
+.hero__content__branding {
+  max-width: 320px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+.hero__content .tittle--small {
+  margin-bottom: 64px;
+}
+.hero__content p {
+  margin-bottom: 20px;
+}
+.hero__content p:last-child {
+  color: silver;
+  font-size: 14px;
+  margin-top: 40px;
+  display: block;
+  opacity: 0.6;
+}
+.hero__content p .link-text {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.hero__content p span {
+  margin-bottom: 32px;
+}
+.hero__content__combos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.hero__content__combos__combo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__content__combos__combo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.hero__content__combos__combo button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #6421ff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero__content__combos__combo button:hover {
+  background-color: rgb(135.6081081081, 84, 255);
+}
+.hero__content__combos__combo__text {
+  text-align: center;
+}
+.hero__content__combos__combo .text {
+  margin-top: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+.text--big {
+  font-size: 18px;
+  line-height: 18px 10px;
+  color: silver;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 16px 10px;
+  color: silver;
+}
+
+.text--smail {
+  font-size: 12px;
+  line-height: 12px 10px;
+  color: silver;
+}
+
+.link-text {
+  font-size: 18px;
+  line-height: 18px 10px;
+  color: silver;
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+.tittle--big {
+  font-size: 44px;
+  line-height: 44px 10px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.tittle {
+  font-size: 40px;
+  line-height: 40px 10px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.tittle--small {
+  font-size: 28px;
+  line-height: 28px 10px;
+  color: silver;
+  color: #f9f9f9;
+}/*# sourceMappingURL=main.css.map */

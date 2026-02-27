@@ -1,9 +1,12 @@
+@use 'sass:color';
 @use 'variaveis';
 
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url('../images/hero_desktop.jpeg');
+    text-align: center;
+    background-size: cover;
 
     &__content {
         max-width: 640px;
@@ -22,13 +25,23 @@
         p {
             margin-bottom: 20px;
 
+            &:last-child {
+                color: variaveis.$prText;
+                font-size: 14px;
+                margin-top: 40px;
+                display: block;
+                opacity: 0.6;
+            }
+
             .link-text {
                 display: inline-block;
-                margin-bottom: 24px;
+                margin-bottom: 16px;
             }
 
             span {
                 margin-bottom: 32px;
+                color: variaveis.$prText;
+                opacity: 0.6;
             }
         }
 
@@ -45,17 +58,16 @@
                 align-items: center;
 
                 img {
-                    max-width: 100%;
+                    max-width: 240px;
                     height: auto;
-                    margin-bottom: 16px;
+                    margin-bottom: 8px;
+                    margin-top: 16px;
                 }
 
                 button {
-                    display: flex !important;
-                    align-items: center !important;
-                    align-content: center !important;
-                    text-align: center !important;
-                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
                     height: 60px;
                     font-size: 18px;
@@ -70,8 +82,12 @@
                     transition: background-color 0.3s;
 
                     &:hover {
-                        background-color: lighten(#6421ff, 10%);
+                        background-color: color.adjust(#6421ff, $lightness: 10%);
                     }
+                }
+
+                &__text {
+                    text-align: center;
                 }
 
                 .text {
