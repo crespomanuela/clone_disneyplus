@@ -6,6 +6,7 @@
 @use 'avaiable-devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -23,7 +24,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-     font-family: Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body {

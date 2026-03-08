@@ -51,18 +51,38 @@
     height: 60px;
     font-size: 18px;
     color: variaveis.$sdText;
-    background-color: #00b4d8;
+    background-color: variaveis.$bgColorPrBtn;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
     border: none;
     border-radius: 12px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 
         &:hover {
             background-color: color.adjust(#040714, $lightness: 10%);
-    }
+        }
+
+        &--secondary {
+            background-color: variaveis.$sdText;
+            color: variaveis.$bgColor;
+
+            &:hover {
+                background-color: variaveis.$bgColorPrBtn;
+                color: variaveis.$sdText;
+            }
+        }
+
+        &--dark {
+            background-color: rgba(variaveis.$darkBtn, 0.8);
+
+            &:hover {
+                background-color: variaveis.$lightBtn;
+                color: variaveis.$prText;
+            }
+        }
 }
 
 .image-text-section {
