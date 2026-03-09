@@ -53,8 +53,8 @@
         &__combos {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            gap: 16px;
+            align-items: flex-end;
+            gap: 24px;
 
             &__combo {
                 width: 100%;
@@ -63,10 +63,16 @@
                 align-items: center;
 
                 img {
-                    max-width: 240px;
+                    max-width: 180px;
                     height: auto;
                     margin-bottom: 8px;
                     margin-top: 16px;
+                }
+
+                &:last-child {
+                    img {
+                        max-width: 260px;
+                    }
                 }
 
                 &__text {
